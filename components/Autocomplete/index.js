@@ -27,6 +27,13 @@ class Autocomplete extends Component {
     this.handleBlur = this.handleBlur.bind(this);
     this.promisifySetState = this.promisifySetState.bind(this);
     this.clearInput = this.clearInput.bind(this);
+    this.setCurrentText = this.setCurrentText.bind(this)
+  }
+
+  setCurrentText(value) {
+    this.setState({
+      inputValue: value
+    })
   }
 
   handleInputChange(text) {
