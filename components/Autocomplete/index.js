@@ -173,6 +173,7 @@ class Autocomplete extends Component {
       disableFullscreenUI,
       textInputProps,
       onEndEditing,
+      onSubmitEditing,
       ...dropdownProps
     } = this.props;
 
@@ -199,6 +200,7 @@ class Autocomplete extends Component {
               }
             }}
             onEndEditing={onEndEditing}
+            onSubmitEditing={onSubmitEditing}
           />
           {loading && (
             <ActivityIndicator
