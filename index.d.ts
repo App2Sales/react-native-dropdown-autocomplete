@@ -36,6 +36,7 @@ type AutocompleteProps = {
     containerStyle?: StyleProp<ViewStyle>;
     scrollStyle?: StyleProp<ViewStyle>;
 
+    onEndEditing?: () => any
     scrollToInput?: (ev: any) => void;
     handleSelectItem: (item: any, index: number) => void;
     onDropdownShow?: () => void;

@@ -171,6 +171,8 @@ class Autocomplete extends Component {
       placeholderColor,
       data,
       disableFullscreenUI,
+      textInputProps,
+      onEndEditing,
       ...dropdownProps
     } = this.props;
 
@@ -196,6 +198,7 @@ class Autocomplete extends Component {
                 scrollToInput(findNodeHandle(event.target));
               }
             }}
+            onEndEditing={onEndEditing}
           />
           {loading && (
             <ActivityIndicator

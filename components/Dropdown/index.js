@@ -475,7 +475,7 @@ export default class Dropdown extends PureComponent {
 
     const {data, itemPadding} = props;
 
-    const {left, top, width, modal} = this.state;
+    const {width, modal} = this.state;
 
     const itemCount = data.length;
     const visibleItemCount = this.visibleItemCount();
@@ -486,7 +486,7 @@ export default class Dropdown extends PureComponent {
     const pickerStyle = {
       width,
       height,
-      left,
+      left: 0,
       transform: [{translateY}],
     };
 
