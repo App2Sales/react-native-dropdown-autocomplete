@@ -22,8 +22,7 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     flexWrap: "wrap",
     flexGrow: undefined,
-    flexShrink: undefined,
-    marginVertical: 4,
+    flexShrink: undefined
   },
   plus: {
     position: "absolute",
