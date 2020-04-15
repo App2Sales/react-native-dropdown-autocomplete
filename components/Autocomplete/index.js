@@ -118,9 +118,9 @@ class Autocomplete extends Component {
   }
 
   setItem(value) {
-    const {index, handleSelectItem, valueExtractor, resetOnSelect} = this.props;
+    const {index, handleSelectItem, valueExtractor, resetOnSelect, onChangeText} = this.props;
     handleSelectItem(value, index);
-
+    if (onChangeText) onChangeText(valueExtractor(value))
     if (resetOnSelect) {
       this.setState({inputValue: ""});
     } else {
